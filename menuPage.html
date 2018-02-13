@@ -1,0 +1,107 @@
+<!DOCTYPE hmtl>
+
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>Cookie & Coffee </title>
+        <link rel="stylesheet" href="menuPage.css">
+    </head>
+
+    <header>
+<img src="./images/cart.png" id="cart">
+        </header>
+
+<body>
+    <div id="MainDiv">
+        <img src="./images/Logo.png" alt="Cookie & Coffee" id="logo">
+
+        <p>
+                <img src="./images/horizintal.png" id="Hline">
+        </p>
+
+    <div id="search">
+        <form action="DB.php" method="post">
+            <input type="text" placeholder="search..">
+            <button type="submit" class="srchBtn"><img src="./images/search.png" class="srchImg"></button>
+        </form>
+    </div>
+        
+
+        <div id="filterBtns">
+                <button class="btn active" onclick="filtering('all')"> Show all</button>
+                <button class="btn" onclick="filtering('coffee')"> Coffee</button>
+                <button class="btn" onclick="filtering('cookie')"> Cookies</button>                
+              </div><!-- div of filterBtns ends here-->
+
+              <div class="items">
+        <!-- Cookie1-->
+  <fieldset class="filter cookie">
+        <legend>Cookie</legend>
+        <p id="cookie1"> <img src="./images/cookies1.jpg"></p>
+        <div>
+                <button class="button">Add to Cart</button>
+              </div>
+              <input type="number" min=1 class = "quantity" value=1>
+      </fieldset>
+
+      <!-- Cookie2-->
+  <fieldset class = "filter cookie">
+        <legend>Cookie2</legend>
+        <p id="cookie1"> <img src="./images/Cookie2.jpg"></p>
+        <div >
+                <button class="button">Add to Cart</button>
+              </div>
+              <input type="number" min=1 class = "quantity" value=1>
+      </fieldset>
+
+       <!-- Cookie2-->
+  <fieldset class="filter cookie">
+        <legend>Spider Cookie</legend>
+        <p id="cookie1"> <img src="./images/spiderCookies.jpg"></p>
+        <div>
+                <button class="button">Add to Cart</button>
+              </div>
+              <input type="number" min=1 class = "quantity" value=1>
+      </fieldset>
+
+      <!-- Coffee1-->
+  <fieldset class="filter coffee">
+        <legend>American Coffee</legend>
+        <p id="cookie1"> <img src="./images/americancoffee.png"></p>
+        <div>
+                <button class="button">Add to Cart</button>
+              </div>
+              <input type="number" min=1 class = "quantity" value =1>
+      </fieldset>
+
+
+      <!-- Coffee2-->
+  <fieldset class="filter coffee">
+        <legend>Coffee2</legend>
+        <p id="cookie1"> <img src="./images/americancoffee.png"></p>
+        <div>
+                <button class="button">Add to Cart</button>
+              </div>
+              <input type="number" min=1 class = "quantity" value =1>
+      </fieldset>
+
+
+      <!-- Coffee3-->
+  <fieldset class="filter coffee">
+        <legend>Coffee3</legend>
+        <p id="cookie1"> <img src="./images/americancoffee.png"></p>
+        <div>
+                <button class="button">Add to Cart</button>
+              </div>
+              <input type="number" min=1 class = "quantity" value =1>
+      </fieldset>
+      </div><!-- div of items ends here-->
+
+    </div><!-- div of mainDiv ends here-->
+
+    
+    <script src="menuPage.js"></script>
+</body>
+    
+    </html>
